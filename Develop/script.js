@@ -2,13 +2,97 @@
 var generateBtn = document.querySelector("#generate");
 
 //function generatepassword
-//update to array later..
+//Updated Array
 function generatePassword() {
   let password = "";
-  let uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-  let lowercase = "abcdefghijklmnopqrstuvwxyz".split("");
-  let numerical = "0123456789".split("");
-  let symbol = "!#$%&'()*+,-./:;<=>?@[]^_`{|}~".split("");
+  let uppercase = [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+  ];
+  let lowercase = [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+  ];
+  let numerical = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+  let symbol = [
+    "!",
+    "#",
+    "$",
+    "%",
+    "&",
+    "(",
+    ")",
+    "*",
+    "+",
+    "-",
+    ".",
+    "'",
+    "/",
+    ":",
+    ";",
+    "<",
+    "=",
+    ">",
+    "?",
+    "@",
+    "[",
+    "]",
+    "^",
+    "_",
+    "'",
+    "{",
+    "|",
+    "}",
+    "~",
+  ];
   let chars = [];
   let character_count = prompt(
     "Hello - Please select a length of between 8 to 128 characters"
@@ -23,7 +107,7 @@ function generatePassword() {
     "Another follow up - Any numeric values you would like in your password? (Yes or No)"
   );
   let special_character_check = confirm(
-    "Lastly, any special characters? (Yes or No)"
+    "Lastly, any special characters? (Ok for Yes or Cancel for No)"
   );
 
   if (parseInt(character_count) < 8 || parseInt(character_count) > 128) {

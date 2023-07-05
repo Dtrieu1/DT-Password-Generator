@@ -136,14 +136,11 @@ function generatePassword() {
   if (special_character_check) {
     chars.push(symbol);
   }
-  console.log(uppercase.join());
-  console.log(chars.flat());
   chars = chars.flat();
 
   for (var i = 0; i < character_count; i++) {
     let randomChar = getRandomIndex(chars);
     password = password.concat(randomChar);
-    console.log(password);
   }
 
   //returns password

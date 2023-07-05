@@ -14,3 +14,4 @@ The first question you would see is getting the user's feedback on the length of
 Please note that I did get the staff support from Brandon Leek, where the coding process utilized may be outside of curriculum content.
 
 Hope you enjoy the Generate Password functionality!
+Deployed Link: https://dtrieu1.github.io/DT-Password-Generator/
